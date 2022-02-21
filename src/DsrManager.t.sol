@@ -7,7 +7,7 @@ import "./DsrManager.sol";
 contract DsrManagerTest is DssDeployTestBase {
     DsrManager manager;
 
-    function setUp() public {
+    function setUp() public override {
         super.setUp();
         deploy();
         manager = new DsrManager(address(pot), address(daiJoin));
